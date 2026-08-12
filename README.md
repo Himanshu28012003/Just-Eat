@@ -1,13 +1,67 @@
-# React + Vite
+# JustEat — Food Ordering Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + Vite frontend for the JustEat food ordering platform.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** with React Router v7
+- **Vite** for bundling and dev server
+- **Tailwind CSS** for styling
+- **Axios** for API calls
+- **react-hot-toast** for notifications
+- **lucide-react** for icons
 
-## React Compiler
+## Features
+
+### Customer
+- Browse and search restaurants (by name, city, cuisine)
+- View restaurant menu with Today's Special and Mostly Ordered filters
+- Add items to cart and checkout
+- Order history and order details
+- Favourite restaurants
+- Cuisine and dietary preferences with personalised recommendations
+- Profile management
+
+### Owner
+- Dashboard with restaurant overview, menu stats and recent orders
+- Create / edit / delete restaurants
+- Create / edit / delete menu items
+- Toggle item availability and Today's Special
+- View and update order statuses
+
+## Project Structure
+
+```
+src/
+├── components/       # Reusable UI components
+├── context/          # AuthContext (JWT + user state)
+├── Pages/            # Route-level page components
+│   └── owner/        # Owner-specific pages
+└── services/         # Axios service modules per domain
+```
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+## Environment
+
+The app connects to:
+```
+https://backend-ddfuhyh9ehcseeeq.australiacentral-01.azurewebsites.net/api/
+```
+
+Configured in `src/services/api.js`. Change `baseURL` to point to a local backend if needed.
+
+## Auth
+
+JWT token and user object are stored in `localStorage`. The app supports two roles:
+- `CUSTOMER` — full ordering experience
+- `OWNER` — restaurant and menu management
+
 
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
