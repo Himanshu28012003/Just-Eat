@@ -1,0 +1,30 @@
+# AI Usage Documentation
+
+## 1. Frontend AI Usage
+
+AI was used as a basic development and learning assistant while developing the frontend.
+
+### Areas where AI was used:
+
+- Understanding Axios API calls.
+- Understanding how frontend communicates with REST APIs.
+- Debugging frontend errors.
+- Understanding CORS errors between frontend and backend.
+- Getting basic help with form validation.
+- Improving UI structure and component organization.
+- Understanding authentication flow and storing JWT information.
+- Preparing frontend API documentation.
+
+### API Integration
+
+AI was used to understand and troubleshoot API integration between the React frontend and Spring Boot backend.
+
+Examples include:
+
+- Sending GET, POST, PUT and DELETE requests.
+- Passing JWT tokens in request headers.
+- Handling API responses and errors.
+- Debugging incorrect API URLs.
+- Troubleshooting CORS during Azure deployment.
+
+The frontend functionality and application flow were implemented and tested by the developer.
